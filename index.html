@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<meta charset="utf-8" lang = "en">
+<head>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<body>
+  <div id="heading">
+    <h2>Graph ploting</h2>
+  </div>
+  <div style="text-align:center;margin-top:15px;">
+    <canvas id="myChart"
+      style="display:inline-block;max-width:65%;height: 80%;max-height: 100%;box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.18);border-radius: 10px; padding: 5px; margin-left: 5px;"></canvas>
+
+    <div class="main">
+      <div class="display">
+      </div>
+      <div class="input">
+        <h4 id="result">Enter</h4>
+      </div>
+      <div class="buttons">
+        <button id="clear">C</button>
+        <button id="delete_single_num">
+          <i class="fa fa-scissors" aria-hidden="true"></i>
+        </button>
+        <button id="Normal_btn">^</button>
+        <button id="Normal_btn">x</button>
+        <button id="Normal_btn">*</button>
+      </div>
+      <div class="buttons">
+        <button id="Normal_btn">1</button>
+        <button id="Normal_btn">2</button>
+        <button id="Normal_btn">3</button>
+        <button id="Normal_btn">4</button>
+        <button id="Normal_btn">-</button>
+
+      </div>
+      <div class="buttons">
+        <button id="Normal_btn">5</button>
+        <button id="Normal_btn">6</button>
+        <button id="Normal_btn">7</button>
+        <button id="Normal_btn">8</button>
+        <button id="Normal_btn">+</button>
+      </div>
+      <div class="buttons">
+        <button id="Normal_btn">9</button>
+        <button id="Normal_btn">0</button>
+        <button id="Normal_btn">sin</button>
+        <button id="Normal_btn">cos</button>
+        <button id="Normal_btn">/</button>
+      </div>
+      <div class="buttons">
+        <button id="Normal_btn">tan</button>
+        <button id="Normal_btn">cot</button>
+        <button id="Normal_btn">log</button>
+        <button id="Normal_btn">e</button>
+        <button id="Normal_btn">1/x</button>
+      </div>
+      <div class="buttons">
+        <button id="Normal_btn">(</button>
+        <button id="Normal_btn">)</button>
+        <button id="Normal_btn">.</button>
+        <button id="equalTo" onclick="getCurve()">plot</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="./index.js"></script>
+  </div>
+  <div id="msgbox">
+    <p id="msgheader">MESSAGE</p>
+    <p id="msg">no messages</p>
+  </div>
+</body>
+
+</html>
